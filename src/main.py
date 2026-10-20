@@ -11,7 +11,7 @@ def analizar_texto(frase: str) -> tuple[int, int]:
     contador_vocales = 0
 
     for caracter in frase:
-        if caracter == vocales:
+        if caracter in vocales:
             contador_vocales += 1
 
     return contador_vocales, contador_palabras
